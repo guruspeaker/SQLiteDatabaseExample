@@ -26,6 +26,7 @@
 		3A00DDC71FC635E700697045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A00DDC91FC635E700697045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A00DDCA1FC635E700697045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A00DDD11FC6388100697045 /* myStudents.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = myStudents.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		3A00DDBA1FC635E700697045 /* SQLiteDatabaseExample */ = {
 			isa = PBXGroup;
 			children = (
+				3A00DDD21FC638AC00697045 /* Database */,
 				3A00DDBB1FC635E700697045 /* AppDelegate.h */,
 				3A00DDBC1FC635E700697045 /* AppDelegate.m */,
 				3A00DDBE1FC635E700697045 /* ViewController.h */,
@@ -69,6 +71,14 @@
 				3A00DDCA1FC635E700697045 /* main.m */,
 			);
 			path = SQLiteDatabaseExample;
+			sourceTree = "<group>";
+		};
+		3A00DDD21FC638AC00697045 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3A00DDD11FC6388100697045 /* myStudents.db */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
