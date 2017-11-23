@@ -13,6 +13,9 @@
 		3A00DDC51FC635E700697045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A00DDC41FC635E700697045 /* Assets.xcassets */; };
 		3A00DDC81FC635E700697045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A00DDC61FC635E700697045 /* LaunchScreen.storyboard */; };
 		3A00DDCB1FC635E700697045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00DDCA1FC635E700697045 /* main.m */; };
+		3A00DDD71FC644C500697045 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00DDD41FC644B600697045 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		3A00DDDA1FC64A7A00697045 /* studentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00DDD91FC64A7A00697045 /* studentInfo.m */; };
+		3AE0B1101FC659B800934C50 /* myStudents.db in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0B10F1FC659B800934C50 /* myStudents.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +29,11 @@
 		3A00DDC71FC635E700697045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A00DDC91FC635E700697045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A00DDCA1FC635E700697045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3A00DDD11FC6388100697045 /* myStudents.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = myStudents.db; sourceTree = "<group>"; };
+		3A00DDD41FC644B600697045 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3A00DDD51FC644B600697045 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3A00DDD81FC64A7A00697045 /* studentInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = studentInfo.h; sourceTree = "<group>"; };
+		3A00DDD91FC64A7A00697045 /* studentInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = studentInfo.m; sourceTree = "<group>"; };
+		3AE0B10F1FC659B800934C50 /* myStudents.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = myStudents.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A00DDD71FC644C500697045 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +53,7 @@
 			children = (
 				3A00DDBA1FC635E700697045 /* SQLiteDatabaseExample */,
 				3A00DDB91FC635E700697045 /* Products */,
+				3A00DDD31FC644B600697045 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +77,7 @@
 				3A00DDC41FC635E700697045 /* Assets.xcassets */,
 				3A00DDC61FC635E700697045 /* LaunchScreen.storyboard */,
 				3A00DDC91FC635E700697045 /* Info.plist */,
+				3A00DDDB1FC64A8400697045 /* Support Files */,
 				3A00DDCA1FC635E700697045 /* main.m */,
 			);
 			path = SQLiteDatabaseExample;
@@ -76,9 +86,27 @@
 		3A00DDD21FC638AC00697045 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				3A00DDD11FC6388100697045 /* myStudents.db */,
+				3AE0B10F1FC659B800934C50 /* myStudents.db */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		3A00DDD31FC644B600697045 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A00DDD51FC644B600697045 /* libsqlite3.0.tbd */,
+				3A00DDD41FC644B600697045 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A00DDDB1FC64A8400697045 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A00DDD81FC64A7A00697045 /* studentInfo.h */,
+				3A00DDD91FC64A7A00697045 /* studentInfo.m */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A00DDC81FC635E700697045 /* LaunchScreen.storyboard in Resources */,
+				3AE0B1101FC659B800934C50 /* myStudents.db in Resources */,
 				3A00DDC51FC635E700697045 /* Assets.xcassets in Resources */,
 				3A00DDC31FC635E700697045 /* Main.storyboard in Resources */,
 			);
@@ -155,6 +184,7 @@
 				3A00DDC01FC635E700697045 /* ViewController.m in Sources */,
 				3A00DDCB1FC635E700697045 /* main.m in Sources */,
 				3A00DDBD1FC635E700697045 /* AppDelegate.m in Sources */,
+				3A00DDDA1FC64A7A00697045 /* studentInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

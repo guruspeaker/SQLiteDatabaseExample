@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../../../myStudents.db">
+   </FileRef>
+   <FileRef
       location = "self:SQLiteDatabaseExample.xcodeproj">
    </FileRef>
 </Workspace>
